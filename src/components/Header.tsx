@@ -33,10 +33,12 @@ const Header = () => {
             variant="outline"
             size="sm"
             className="hidden sm:flex items-center gap-2"
-            onClick={() => window.open('https://wa.me/8801813771121', '_blank')}
+            asChild
           >
-            <MessageCircle className="w-4 h-4" />
-            WhatsApp
+            <a href="https://wa.me/8801813771121" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp
+            </a>
           </Button>
           <Button variant="hero" size="lg" onClick={scrollToForm}>
             Check Eligibility

@@ -1,4 +1,6 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { MessageCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,10 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">F</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src={logo} alt="Free Heating Control" className="w-10 h-10" />
               <h3 className="text-xl font-bold">Free Heating Control</h3>
             </div>
             <p className="text-background/80 mb-4">
@@ -19,21 +19,17 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-primary" />
-                <span>+8801813771121</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-primary" />
-                <span>sharifulhridoy01@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span>United Kingdom</span>
-              </div>
-            </div>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <Button
+              variant="outline"
+              className="bg-transparent border-background/20 text-background hover:bg-background/10"
+              asChild
+            >
+              <a href="https://wa.me/8801813771121" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <MessageCircle className="w-4 h-4" />
+                Contact via WhatsApp
+              </a>
+            </Button>
           </div>
 
           <div>
