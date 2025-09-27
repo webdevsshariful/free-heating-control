@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import EligibilitySection from "@/components/EligibilitySection";
 import MultiStepForm from "@/components/MultiStepForm";
+import ReferralForm from "@/components/ReferralForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <ProcessSteps />
       <EligibilitySection />
       <MultiStepForm />
+      <ReferralForm />
       <Footer />
     </div>
   );
