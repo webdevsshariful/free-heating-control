@@ -5,13 +5,11 @@ import { Menu, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const NAV_ITEMS = [
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#eligibility", label: "Eligibility" },
+  { href: "#eligibility-form", label: "Check Eligibility" },
   { href: "#referral-form", label: "Refer Friends" },
-  { href: "#contact", label: "Contact" },
 ];
 
-const Header = () => {
+const Header2 = () => {
   const [open, setOpen] = useState(false);
 
   const scrollToForm = useCallback(() => {
@@ -88,15 +86,6 @@ const Header = () => {
                 </a>
               </Button>
 
-              {/* CTA scales up on md+ */}
-              <Button
-                variant="hero"
-                onClick={scrollToForm}
-                className="h-9 px-3 text-sm md:h-10 md:px-6 md:text-base"
-              >
-                Check Eligibility
-              </Button>
-
               {/* Mobile menu trigger (md-) */}
               <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger asChild>
@@ -109,12 +98,8 @@ const Header = () => {
                     <img
                       src={logo}
                       alt="Free Heating Control"
-                      className="w-8 h-8 rounded-md object-contain"
+                      className="rounded-md object-contain"
                     />
-                    <div>
-                      <p className="font-semibold leading-tight">Free Heating Control</p>
-                      <p className="text-xs text-muted-foreground">United Kingdom</p>
-                    </div>
                   </div>
 
                   <nav className="grid gap-2">
@@ -146,9 +131,6 @@ const Header = () => {
                         WhatsApp
                       </a>
                     </Button>
-                    <Button variant="hero" onClick={() => { setOpen(false); scrollToForm(); }}>
-                      Check Eligibility
-                    </Button>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -160,4 +142,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;

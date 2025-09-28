@@ -5,6 +5,7 @@ import EligibilitySection from "@/components/EligibilitySection";
 import MultiStepForm from "@/components/MultiStepForm";
 import ReferralForm from "@/components/ReferralForm";
 import Footer from "@/components/Footer";
+import ContactCTA from "@/components/ContactCTA";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <ProcessSteps />
       <EligibilitySection />
       <MultiStepForm />
+      <ContactCTA />
       <ReferralForm />
       <Footer />
     </div>

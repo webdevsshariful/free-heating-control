@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageCircle } from "lucide-react";
 
 const EligibilitySection = () => {
   const scrollToForm = () => {
@@ -34,12 +35,12 @@ const EligibilitySection = () => {
                     Most of our customers qualify for a free boiler.
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    But even if you can't access a free boiler, you may be able to get a part funded 
-                    or heavily subsidised boiler. That means you'll get some funding, but you'll need 
+                    But even if you can't access a free boiler, you may be able to get a part funded
+                    or heavily subsidised boiler. That means you'll get some funding, but you'll need
                     to make a contribution towards the cost.
                   </p>
                   <p className="text-muted-foreground text-sm">
-                    If you're struggling with an old, inefficient boiler that keeps breaking down or 
+                    If you're struggling with an old, inefficient boiler that keeps breaking down or
                     costs a fortune to run, then this could be a way for you to solve the problem for good.
                   </p>
                 </CardContent>
@@ -52,9 +53,9 @@ const EligibilitySection = () => {
                 <p className="text-muted-foreground mb-6">
                   Complete our simple eligibility form and find out if you qualify for a free boiler replacement.
                 </p>
-                <Button 
-                  variant="hero" 
-                  size="lg" 
+                <Button
+                  variant="hero"
+                  size="lg"
                   className="w-full"
                   onClick={scrollToForm}
                 >
@@ -65,9 +66,17 @@ const EligibilitySection = () => {
               <div className="text-center">
                 <p className="text-sm text-muted-foreground">
                   Have questions? Call us at{" "}
-                  <a href="tel:+8801813771121" className="text-primary font-medium hover:underline">
-                    +8801813771121
-                  </a>
+                  <Button variant="outline" size="lg" asChild className="flex items-center gap-2">
+                    <a
+                      href="https://wa.me/8801813771121"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Chat on WhatsApp"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      Chat on WhatsApp
+                    </a>
+                  </Button>
                 </p>
               </div>
             </div>
