@@ -6,18 +6,19 @@ import MultiStepForm from "@/components/MultiStepForm";
 import ReferralForm from "@/components/ReferralForm";
 import Footer from "@/components/Footer";
 import ContactCTA from "@/components/ContactCTA";
+import Header2 from "@/components/Header2";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <HeroSection />
-      <ProcessSteps />
-      <EligibilitySection />
+      <Header2 />
+      {/* <HeroSection /> */}
       <MultiStepForm />
-      <ContactCTA />
       <ReferralForm />
-      <Footer />
+      <EligibilitySection />
+      <ContactCTA />
+      <ProcessSteps />
+      {/* <Footer /> */}
     </div>
   );
 };
