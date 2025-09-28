@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png";
 
 const NAV_ITEMS = [
   { href: "#how-it-works", label: "How It Works" },
-  { href: "#eligibility", label: "Eligibility" },
+  { href: "/eligibility-form", label: "Eligibility" },
   { href: "#referral-form", label: "Refer Friends" },
   { href: "#contact", label: "Contact" },
 ];
